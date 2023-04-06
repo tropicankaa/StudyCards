@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA3123F227429B5F00A74F64 /* StudyCards_KonuykhovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3123F127429B5F00A74F64 /* StudyCards_KonuykhovaApp.swift */; };
+		FA3123F427429B5F00A74F64 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3123F327429B5F00A74F64 /* CardListView.swift */; };
+		FA3123F627429B6200A74F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3123F527429B6200A74F64 /* Assets.xcassets */; };
+		FA3123F927429B6200A74F64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3123F827429B6200A74F64 /* Preview Assets.xcassets */; };
+		FA31240427429B6300A74F64 /* StudyCards_KonuykhovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31240327429B6300A74F64 /* StudyCards_KonuykhovaTests.swift */; };
+		FA31240F27429B6300A74F64 /* StudyCards_KonuykhovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31240E27429B6300A74F64 /* StudyCards_KonuykhovaUITests.swift */; };
+		FA3124202742A60300A74F64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA31241F2742A60300A74F64 /* GoogleService-Info.plist */; };
+		FA3124262742A87900A74F64 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA3124252742A87900A74F64 /* FirebaseFirestore */; };
+		FA3124282742A87900A74F64 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FA3124272742A87900A74F64 /* FirebaseFirestoreSwift-Beta */; };
+		FA3124432742ABF200A74F64 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3124422742ABF200A74F64 /* CardRepository.swift */; };
+		FA3124482742AD1C00A74F64 /* StudyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3124472742AD1C00A74F64 /* StudyCard.swift */; };
+		FA31244D2742C2EA00A74F64 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31244C2742C2EA00A74F64 /* CardListViewModel.swift */; };
+		FA3124532743DB1000A74F64 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3124522743DB1000A74F64 /* CardView.swift */; };
+		FA31245B2743DC2300A74F64 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31245A2743DC2300A74F64 /* CardViewModel.swift */; };
+		FA3124602744122C00A74F64 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31245F2744122B00A74F64 /* FormView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA31240027429B6300A74F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3123E627429B5F00A74F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3123ED27429B5F00A74F64;
+			remoteInfo = StudyCards_Konuykhova;
+		};
+		FA31240B27429B6300A74F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3123E627429B5F00A74F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3123ED27429B5F00A74F64;
+			remoteInfo = StudyCards_Konuykhova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA3123EE27429B5F00A74F64 /* StudyCards_Konuykhova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyCards_Konuykhova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3123F127429B5F00A74F64 /* StudyCards_KonuykhovaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCards_KonuykhovaApp.swift; sourceTree = "<group>"; };
+		FA3123F327429B5F00A74F64 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		FA3123F527429B6200A74F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3123F827429B6200A74F64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA3123FA27429B6200A74F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3123FF27429B6300A74F64 /* StudyCards_KonuykhovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCards_KonuykhovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA31240327429B6300A74F64 /* StudyCards_KonuykhovaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCards_KonuykhovaTests.swift; sourceTree = "<group>"; };
+		FA31240527429B6300A74F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA31240A27429B6300A74F64 /* StudyCards_KonuykhovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCards_KonuykhovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA31240E27429B6300A74F64 /* StudyCards_KonuykhovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCards_KonuykhovaUITests.swift; sourceTree = "<group>"; };
+		FA31241027429B6300A74F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA31241F2742A60300A74F64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA3124422742ABF200A74F64 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		FA3124472742AD1C00A74F64 /* StudyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCard.swift; sourceTree = "<group>"; };
+		FA31244C2742C2EA00A74F64 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		FA3124522743DB1000A74F64 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA31245A2743DC2300A74F64 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		FA31245F2744122B00A74F64 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3123EB27429B5F00A74F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3124262742A87900A74F64 /* FirebaseFirestore in Frameworks */,
+				FA3124282742A87900A74F64 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3123FC27429B6300A74F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA31240727429B6300A74F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA3123E527429B5F00A74F64 = {
+			isa = PBXGroup;
+			children = (
+				FA3123F027429B5F00A74F64 /* StudyCards_Konuykhova */,
+				FA31240227429B6300A74F64 /* StudyCards_KonuykhovaTests */,
+				FA31240D27429B6300A74F64 /* StudyCards_KonuykhovaUITests */,
+				FA3123EF27429B5F00A74F64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3123EF27429B5F00A74F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3123EE27429B5F00A74F64 /* StudyCards_Konuykhova.app */,
+				FA3123FF27429B6300A74F64 /* StudyCards_KonuykhovaTests.xctest */,
+				FA31240A27429B6300A74F64 /* StudyCards_KonuykhovaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3123F027429B5F00A74F64 /* StudyCards_Konuykhova */ = {
+			isa = PBXGroup;
+			children = (
+				FA3123F127429B5F00A74F64 /* StudyCards_KonuykhovaApp.swift */,
+				FA31243E2742ABB100A74F64 /* Repository */,
+				FA31243A2742ABA200A74F64 /* ViewModels */,
+				FA3124362742AB9600A74F64 /* Models */,
+				FA31242F2742AB7200A74F64 /* Views */,
+				FA3123F527429B6200A74F64 /* Assets.xcassets */,
+				FA3123FA27429B6200A74F64 /* Info.plist */,
+				FA31241F2742A60300A74F64 /* GoogleService-Info.plist */,
+				FA3123F727429B6200A74F64 /* Preview Content */,
+			);
+			path = StudyCards_Konuykhova;
+			sourceTree = "<group>";
+		};
+		FA3123F727429B6200A74F64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA3123F827429B6200A74F64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA31240227429B6300A74F64 /* StudyCards_KonuykhovaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA31240327429B6300A74F64 /* StudyCards_KonuykhovaTests.swift */,
+				FA31240527429B6300A74F64 /* Info.plist */,
+			);
+			path = StudyCards_KonuykhovaTests;
+			sourceTree = "<group>";
+		};
+		FA31240D27429B6300A74F64 /* StudyCards_KonuykhovaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA31240E27429B6300A74F64 /* StudyCards_KonuykhovaUITests.swift */,
+				FA31241027429B6300A74F64 /* Info.plist */,
+			);
+			path = StudyCards_KonuykhovaUITests;
+			sourceTree = "<group>";
+		};
+		FA31242F2742AB7200A74F64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA3123F327429B5F00A74F64 /* CardListView.swift */,
+				FA3124522743DB1000A74F64 /* CardView.swift */,
+				FA31245F2744122B00A74F64 /* FormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA3124362742AB9600A74F64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3124472742AD1C00A74F64 /* StudyCard.swift */,
+				FA31245A2743DC2300A74F64 /* CardViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA31243A2742ABA200A74F64 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA31244C2742C2EA00A74F64 /* CardListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA31243E2742ABB100A74F64 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA3124422742ABF200A74F64 /* CardRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3123ED27429B5F00A74F64 /* StudyCards_Konuykhova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA31241327429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_Konuykhova" */;
+			buildPhases = (
+				FA3123EA27429B5F00A74F64 /* Sources */,
+				FA3123EB27429B5F00A74F64 /* Frameworks */,
+				FA3123EC27429B5F00A74F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyCards_Konuykhova;
+			packageProductDependencies = (
+				FA3124252742A87900A74F64 /* FirebaseFirestore */,
+				FA3124272742A87900A74F64 /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = StudyCards_Konuykhova;
+			productReference = FA3123EE27429B5F00A74F64 /* StudyCards_Konuykhova.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA3123FE27429B6300A74F64 /* StudyCards_KonuykhovaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA31241627429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_KonuykhovaTests" */;
+			buildPhases = (
+				FA3123FB27429B6300A74F64 /* Sources */,
+				FA3123FC27429B6300A74F64 /* Frameworks */,
+				FA3123FD27429B6300A74F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA31240127429B6300A74F64 /* PBXTargetDependency */,
+			);
+			name = StudyCards_KonuykhovaTests;
+			productName = StudyCards_KonuykhovaTests;
+			productReference = FA3123FF27429B6300A74F64 /* StudyCards_KonuykhovaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA31240927429B6300A74F64 /* StudyCards_KonuykhovaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA31241927429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_KonuykhovaUITests" */;
+			buildPhases = (
+				FA31240627429B6300A74F64 /* Sources */,
+				FA31240727429B6300A74F64 /* Frameworks */,
+				FA31240827429B6300A74F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA31240C27429B6300A74F64 /* PBXTargetDependency */,
+			);
+			name = StudyCards_KonuykhovaUITests;
+			productName = StudyCards_KonuykhovaUITests;
+			productReference = FA31240A27429B6300A74F64 /* StudyCards_KonuykhovaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3123E627429B5F00A74F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FA3123ED27429B5F00A74F64 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FA3123FE27429B6300A74F64 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FA3123ED27429B5F00A74F64;
+					};
+					FA31240927429B6300A74F64 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FA3123ED27429B5F00A74F64;
+					};
+				};
+			};
+			buildConfigurationList = FA3123E927429B5F00A74F64 /* Build configuration list for PBXProject "StudyCards_Konuykhova" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3123E527429B5F00A74F64;
+			packageReferences = (
+				FA3124242742A87900A74F64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FA3123EF27429B5F00A74F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3123ED27429B5F00A74F64 /* StudyCards_Konuykhova */,
+				FA3123FE27429B6300A74F64 /* StudyCards_KonuykhovaTests */,
+				FA31240927429B6300A74F64 /* StudyCards_KonuykhovaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3123EC27429B5F00A74F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3123F927429B6200A74F64 /* Preview Assets.xcassets in Resources */,
+				FA3123F627429B6200A74F64 /* Assets.xcassets in Resources */,
+				FA3124202742A60300A74F64 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3123FD27429B6300A74F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA31240827429B6300A74F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3123EA27429B5F00A74F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3124602744122C00A74F64 /* FormView.swift in Sources */,
+				FA31244D2742C2EA00A74F64 /* CardListViewModel.swift in Sources */,
+				FA3123F427429B5F00A74F64 /* CardListView.swift in Sources */,
+				FA3124482742AD1C00A74F64 /* StudyCard.swift in Sources */,
+				FA3124432742ABF200A74F64 /* CardRepository.swift in Sources */,
+				FA3124532743DB1000A74F64 /* CardView.swift in Sources */,
+				FA3123F227429B5F00A74F64 /* StudyCards_KonuykhovaApp.swift in Sources */,
+				FA31245B2743DC2300A74F64 /* CardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3123FB27429B6300A74F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA31240427429B6300A74F64 /* StudyCards_KonuykhovaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA31240627429B6300A74F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA31240F27429B6300A74F64 /* StudyCards_KonuykhovaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA31240127429B6300A74F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3123ED27429B5F00A74F64 /* StudyCards_Konuykhova */;
+			targetProxy = FA31240027429B6300A74F64 /* PBXContainerItemProxy */;
+		};
+		FA31240C27429B6300A74F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3123ED27429B5F00A74F64 /* StudyCards_Konuykhova */;
+			targetProxy = FA31240B27429B6300A74F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA31241127429B6300A74F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA31241227429B6300A74F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA31241427429B6300A74F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyCards_Konuykhova/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyCards_Konuykhova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-Konuykhova";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA31241527429B6300A74F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyCards_Konuykhova/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyCards_Konuykhova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-Konuykhova";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA31241727429B6300A74F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudyCards_KonuykhovaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-KonuykhovaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyCards_Konuykhova.app/StudyCards_Konuykhova";
+			};
+			name = Debug;
+		};
+		FA31241827429B6300A74F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudyCards_KonuykhovaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-KonuykhovaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyCards_Konuykhova.app/StudyCards_Konuykhova";
+			};
+			name = Release;
+		};
+		FA31241A27429B6300A74F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudyCards_KonuykhovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-KonuykhovaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyCards_Konuykhova;
+			};
+			name = Debug;
+		};
+		FA31241B27429B6300A74F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudyCards_KonuykhovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.StudyCards-KonuykhovaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyCards_Konuykhova;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3123E927429B5F00A74F64 /* Build configuration list for PBXProject "StudyCards_Konuykhova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA31241127429B6300A74F64 /* Debug */,
+				FA31241227429B6300A74F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA31241327429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_Konuykhova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA31241427429B6300A74F64 /* Debug */,
+				FA31241527429B6300A74F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA31241627429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_KonuykhovaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA31241727429B6300A74F64 /* Debug */,
+				FA31241827429B6300A74F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA31241927429B6300A74F64 /* Build configuration list for PBXNativeTarget "StudyCards_KonuykhovaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA31241A27429B6300A74F64 /* Debug */,
+				FA31241B27429B6300A74F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA3124242742A87900A74F64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA3124252742A87900A74F64 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3124242742A87900A74F64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA3124272742A87900A74F64 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3124242742A87900A74F64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA3123E627429B5F00A74F64 /* Project object */;
+}
